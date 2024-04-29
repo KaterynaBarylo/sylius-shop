@@ -1,0 +1,11 @@
+{% if data.stockStatus != 'expected' %}
+    {% set path = path(options.link.route, options.link.parameters|default({'id': data.id})) %}
+
+    <form action="{{ path }}" method="POST">
+        <input type="hidden" name="_method" value="PATCH">
+        <button class="ui brown labeled icon button" type="submit">
+            <i class="{{ action.icon|default('clock') }} icon"></i>
+            {{ 'app.ui.expected'|trans }}
+        </button>
+    </form>
+{% endif %}

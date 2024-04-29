@@ -1,0 +1,23 @@
+sylius_paypal_webhook:
+    resource: "@SyliusPayPalPlugin/Resources/config/webhook_routing.yaml"
+
+app_admin_product_stock:
+    resource: |
+        alias: app.product_stock
+        section: admin
+        templates: "@SyliusAdmin\\Crud"
+        redirect: update
+        grid: app_admin_product_stock
+        vars:
+            all:
+                subheader: app.ui.product_stock
+            index:
+                icon: 'list layout'
+    type: sylius.resource
+    prefix: /admin
+
+app_admin_product_stock_to_expected:
+    path: /admin/product-stocks/{id}/expected
+    methods: [PATCH]
+    defaults:
+        _controller: App\Controller\ProductStockController::toExpectedAction

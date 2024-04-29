@@ -1,0 +1,14 @@
+app:
+    ui:
+        product_stock: Product Stock
+        product_stocks: Product stock manager
+        stock_status: Status
+        restock_date: Restock Date
+        expected: Expected
+        in_stock: In stock
+        out_of_stock: Out of stock
+        product: Product
+        stock-status: Stock status
+        restock-date: restock date
+        new_product_stock: New Product Stock
+        edit_product_stock: Editing Product Stock       

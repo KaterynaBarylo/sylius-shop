@@ -1,0 +1,9 @@
+# config/packages/sylius_resource.yaml
+sylius_resource:
+    resources:
+        app.product_stock:
+            driver: doctrine/orm # You can use also different driver here
+            classes:
+                model: App\Entity\Product\ProductStock
+                repository: App\Repository\ProductStockRepository
+                controller: App\Controller\ProductStockController
