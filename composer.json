@@ -27,7 +27,7 @@
         "php": "^8.0",
         "sylius/paypal-plugin": "^1.5.2",
         "sylius/sylius": "^1.12.11",
-        "symfony/dotenv": "^5.4 || ^6.4",
+        "symfony/dotenv": "^7.1.1",
         "symfony/runtime": "^5.4 || ^6.4",
         "symfony/flex": "^2.4"
     },
